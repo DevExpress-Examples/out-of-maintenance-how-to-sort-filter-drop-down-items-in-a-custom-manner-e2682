@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace XtraPivotGrid_ExampleTemplate {
+namespace XtraPivotGrid_SortedFilterItems {
     static class Program {
         /// <summary>
         /// The main entry point for the application.

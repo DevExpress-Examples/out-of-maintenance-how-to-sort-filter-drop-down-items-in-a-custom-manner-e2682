@@ -1,17 +1,16 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.Reflection
+﻿Imports System.Reflection
 Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
 
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("XtraPivotGrid_ExampleTemplate")>
+<Assembly: AssemblyTitle("XtraPivotGrid_SortedFilterItems")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("XtraPivotGrid_ExampleTemplate")>
-<Assembly: AssemblyCopyright("Copyright ©  2010")>
+<Assembly: AssemblyProduct("XtraPivotGrid_SortedFilterItems")>
+<Assembly: AssemblyCopyright("Copyright ©  2019")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 

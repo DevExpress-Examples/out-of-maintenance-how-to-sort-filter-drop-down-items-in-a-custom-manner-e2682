@@ -4,15 +4,18 @@ using System.Windows.Forms;
 using DevExpress.XtraPivotGrid;
 using DevExpress.XtraPivotGrid.Data;
 
-namespace XtraPivotGrid_ExampleTemplate {
-    public partial class Form1 : Form {
+namespace XtraPivotGrid_SortedFilterItems
+{
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    {
         public Form1() {
             InitializeComponent();
+            excelDataSource1.FileName = "SalesPerson.xlsx";
+            excelDataSource1.Fill();
+            pivotGridControl1.CustomFilterPopupItems += pivotGridControl1_CustomFilterPopupItems;
         }
         private void Form1_Load(object sender, EventArgs e) {
-            DataSet1TableAdapters.ProductReportsTableAdapter tableAdapter =
-                new DataSet1TableAdapters.ProductReportsTableAdapter();
-            pivotGridControl1.DataSource = tableAdapter.GetData();
+            pivotGridControl1.DataSource = excelDataSource1;
             pivotGridControl1.BestFit();
         }
         private void pivotGridControl1_CustomFilterPopupItems(object sender, 
@@ -21,7 +24,7 @@ namespace XtraPivotGrid_ExampleTemplate {
                 ArrayList.Adapter((IList)e.Items).Sort(new FilterItemsComparer());
         }
         private void rbAlphabeticalSort_CheckedChanged(object sender, EventArgs e) {
-            fieldProductName.ShowFilterPopup();
+            fieldProductName1.ShowFilterPopup();
         }
     }
     public class FilterItemsComparer : IComparer {
