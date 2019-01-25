@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace XtraPivotGrid_ExampleTemplate
+﻿Namespace XtraPivotGrid_ExampleTemplate
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -32,7 +30,7 @@ Namespace XtraPivotGrid_ExampleTemplate
 			Me.groupBox1 = New System.Windows.Forms.GroupBox()
 			Me.rbCaptionLength = New System.Windows.Forms.RadioButton()
 			Me.rbAlphabeticalSort = New System.Windows.Forms.RadioButton()
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.groupBox1.SuspendLayout()
 			Me.SuspendLayout()
 			' 
@@ -44,7 +42,6 @@ Namespace XtraPivotGrid_ExampleTemplate
 			Me.pivotGridControl1.Name = "pivotGridControl1"
 			Me.pivotGridControl1.Size = New System.Drawing.Size(520, 464)
 			Me.pivotGridControl1.TabIndex = 0
-'			Me.pivotGridControl1.CustomFilterPopupItems += New DevExpress.XtraPivotGrid.PivotCustomFilterPopupItemsEventHandler(Me.pivotGridControl1_CustomFilterPopupItems);
 			' 
 			' fieldYear
 			' 
@@ -106,7 +103,8 @@ Namespace XtraPivotGrid_ExampleTemplate
 			Me.rbAlphabeticalSort.TabStop = True
 			Me.rbAlphabeticalSort.Text = "Alphabetically"
 			Me.rbAlphabeticalSort.UseVisualStyleBackColor = True
-'			Me.rbAlphabeticalSort.CheckedChanged += New System.EventHandler(Me.rbAlphabeticalSort_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.rbAlphabeticalSort.CheckedChanged += new System.EventHandler(this.rbAlphabeticalSort_CheckedChanged);
 			' 
 			' Form1
 			' 
@@ -117,8 +115,9 @@ Namespace XtraPivotGrid_ExampleTemplate
 			Me.Controls.Add(Me.pivotGridControl1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'			Me.Load += New System.EventHandler(Me.Form1_Load);
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
+			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.groupBox1.ResumeLayout(False)
 			Me.groupBox1.PerformLayout()
 			Me.ResumeLayout(False)
@@ -127,7 +126,7 @@ Namespace XtraPivotGrid_ExampleTemplate
 
 		#End Region
 
-		Private WithEvents pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
+		Private pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
 		Private fieldYear As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductName As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductSales As DevExpress.XtraPivotGrid.PivotGridField

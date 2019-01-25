@@ -47,7 +47,6 @@ namespace XtraPivotGrid_ExampleTemplate {
             this.pivotGridControl1.Name = "pivotGridControl1";
             this.pivotGridControl1.Size = new System.Drawing.Size(520, 464);
             this.pivotGridControl1.TabIndex = 0;
-            this.pivotGridControl1.CustomFilterPopupItems += new DevExpress.XtraPivotGrid.PivotCustomFilterPopupItemsEventHandler(this.pivotGridControl1_CustomFilterPopupItems);
             // 
             // fieldYear
             // 
