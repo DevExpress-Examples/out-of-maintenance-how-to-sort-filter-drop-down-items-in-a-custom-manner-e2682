@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Form1.cs](./CS/XtraPivotGrid_CustomFilterItemsSorting/Form1.cs) (VB: [Form1.vb](./VB/XtraPivotGrid_CustomFilterItemsSorting/Form1.vb))
+* [Form1.cs](./CS/XtraPivotGrid_SortedFilterItems/Form1.cs) (VB: [Form1.vb](./VB/XtraPivotGrid_SortedFilterItems/Form1.vb))
 <!-- default file list end -->
 # How to Change the Item Order in the Filter Drop-Down List
 
