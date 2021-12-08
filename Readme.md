@@ -13,4 +13,4 @@
 This example demonstrates how to sort items in a filter drop-down list.
 Handle the [CustomFilterPopupItems](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomFilterPopupItems) event to sort a list of items displayed in the pop-up filter dialog.
 
-![screenshot](https://github.com/DevExpress-Examples/how-to-sort-filter-drop-down-items-in-a-custom-manner-e2682/blob/18.2.3%2B/images/screenshot.png)
+![screenshot](./images/screenshot.png)
